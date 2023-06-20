@@ -1,43 +1,51 @@
-Pandas
+## Pandas
 
-    什么是Pandas
+### 什么是 Pandas
 
-        Pandas：Python的一个第三方库，是一个数据分析库。
-        Pandas提供了数据清洗、数据准备和数据分析功能
-        Dataframe：在python代码中创建和管理的数据表
-        Series：数据表中的每一列
-        pandas可以将数据从excel工作簿加载到Dataframe
-        加载数据 - 查看数据 - 处理数据（检查数据、数据排序、数据筛选、清理数据）- 导出到excel
+Pandas 提供了数据清洗、数据准备和数据分析功能
 
-    安装pandas
+Dataframe：在 python 代码中创建和管理的数据表
 
-        pip install pandas
-        pip install openpyxl
+Series：数据表中的每一列
 
-    加载并保存数据
+pandas 可以将数据从 excel 工作簿加载到 Dataframe
 
-        读取文件
+加载数据 - 查看数据 - 处理数据（检查数据、数据排序、数据筛选、清理数据）- 导出到 excel
 
-            import pandas as pd
-            df_csv = pd.read_csv("数据集.csv")  读取csv文件
-            df_xlsx = pd.read_excel("人力资源数据.xlsx", sheet_name="新入职员工", header=None)
+安装 pandas
 
-            注释:
-            读取Excel文件；只有一个参数默认读取第一个工作表。
-            如需读取指定工作表，则添加第二个参数sheet_name；
-            panda会默认把第一行数据当作标题行来处理。
-            传入第三个参数header去掉默认行为
+```
+pip install pandas
+pip install openpyxl
+```
 
-            print(df_xlsx)
-            df_xlsx.columns = ["员工编号","员工姓名","办公楼","电话","部门","状态","入职日期","在职年数","福利代码","年薪",]  添加Dataframe列名（excel表头）
+加载并保存数据
 
-        导出文件
+读取文件
 
-            df_xlsx.to_excel("导出\新员工.xlsx", index=None)  保存数据到Excel文件
-                参数格式：导出目录\文件名（注意是反斜杠）
-                默认导出工作表的每行数据会自带索引，如需去掉，则传入第二个参数index=None
+```PYTHON
+import pandas as pd
+df_csv = pd.read_csv("数据集.csv")  读取csv文件
+df_xlsx = pd.read_excel("人力资源数据.xlsx", sheet_name="新入职员工", header=None)
 
-    查看数据
+# 读取Excel文件；只有一个参数默认读取第一个工作表。
+# 如需读取指定工作表，则添加第二个参数sheet_name；
+# panda会默认把第一行数据当作标题行来处理。
+# 传入第三个参数header去掉默认行为
+
+print(df_xlsx)
+df_xlsx.columns = ["员工编号","员工姓名","办公楼","电话","部门","状态","入职日期","在职年数","福利代码","年薪",]  添加Dataframe列名（excel表头）
+```
+
+导出文件
+
+```python
+df_xlsx.to_excel("导出\新员工.xlsx", index=None)  保存数据到Excel文件
+# 参数格式：导出目录\文件名（注意是反斜杠）
+# 默认导出工作表的每行数据会自带索引，如需去掉，则传入第二个参数index=None
+```
+
+查看数据
 
         查看dataframe中的所有数据
 

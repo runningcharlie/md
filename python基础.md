@@ -1,29 +1,29 @@
-#### 准备工作
+## 准备工作
 
-**Python 交互式页面**
+### Python 交互式页面
 
 `print`函数：打印
 
-`quit()`函数：退出python交互环境
+`quit()`函数：退出 python 交互环境
 
-**编程工具（IDE）**
+### 编程工具（IDE）
 
-IDLE：python自带的IDE
+IDLE：python 自带的 IDE
 
 Ctrl + N：New file
 
-运行脚本：F5键
+运行脚本：F5 键
 
-#### 基础编程
+## 基础编程
 
-**Python的特点**
+### Python 的特点
 
 1. 解释性语言：从源代码直接运行
-2. 面向对象的编程语言：Python里面所有的东西都是对象
+2. 面向对象的编程语言：Python 里面所有的东西都是对象
 
 对象可以是任何东西的抽象，它包括三个基本面: 身份、属性和行为。面向对象可扩展，写出的代码容易修改和维护。
 
-**数据类型**
+### 数据类型
 
 原始数据类型：数字、字符串、布尔值
 
@@ -37,17 +37,17 @@ Ctrl + N：New file
 
 单引号、双引号和三引号标注（多行）
 
-以Unicode规范编码
+以 Unicode 规范编码
 
-Unicode规范
+Unicode 规范
 
 旨在列出人类语言中用到的每一个字符，并赋予每一个字符唯一的整数编码
 
-ord函数：获取代表该字符的Unicode编码
+ord 函数：获取代表该字符的 Unicode 编码
 
-char函数：将编码转换成字符串
+char 函数：将编码转换成字符串
 
-**变量及其运算**
+### 变量及其运算
 
 ```python
 x = 10
@@ -55,9 +55,9 @@ x = 10
 
 None：空值
 
-type函数：检测变量的数据类型
+type 函数：检测变量的数据类型
 
-**常用内置函数**
+### 常用内置函数
 
 `print()`：输出指定内容
 
@@ -76,7 +76,7 @@ round(12.45466,2) // 12.45 => 保留两位小数
 
 `str()`：将其他数据类型转换为字符串
 
-**运算符**
+### 运算符
 
 对数据进行运算的符号
 
@@ -86,15 +86,15 @@ round(12.45466,2) // 12.45 => 保留两位小数
 
 优先级
 
-**表达式和语句**
+### 表达式和语句
 
 表达式：值、变量、运算符，以及函数调用的组合
 
 语句：解释器可以执行的一个完整的任务
 
-#### 条件语句
+## 条件语句
 
-**比较运算符和逻辑运算符**
+### 比较运算符和逻辑运算符
 
 比较运算符：比较两个值，其结果为一个布尔值
 
@@ -116,20 +116,20 @@ not：非 -> 对布尔值取反
 
 布尔运算的短路效应
 
-**if语句**
+### if 语句
 
 根据某种预设条件， 做或者不做某些事， 或者变更路径
 
-如果条件A为真，执行任务B
+如果条件 A 为真，执行任务 B
 
 ```python
 if 13 > 10:
 	print('13大于10')
 ```
 
-**if/elif/else 语句**
+### if/elif/else 语句
 
-else的用法：
+else 的用法：
 
 ```python
 isRain = input('下雨吗？Y/N ')
@@ -140,7 +140,7 @@ else:
     print('去打球')
 ```
 
-elif的用法：
+elif 的用法：
 
 ```python
 temperature = int(input('输入温度： '))
@@ -154,29 +154,29 @@ else:
   print('不热')
 ```
 
-**其他形式的条件语句**
+### 其他形式的条件语句
 
-- 简短条件语句 
+- 简短条件语句
 
 CH3 age_conditional_statement
 
-表达式1 if 条件 else 表达式2
+表达式 1 if 条件 else 表达式 2
 
 等同于
 
-if条件：
+if 条件：
 
-​	表达式1
+​ 表达式 1
 
 else:
 
-​	表达式2
+​ 表达式 2
 
-- 嵌套if 
+- 嵌套 if
 
-CH3  isLeapYear
+CH3 isLeapYear
 
-#### 循环语句
+## 循环语句
 
 循环：重复执行某个代码块
 
@@ -189,7 +189,7 @@ CH3  isLeapYear
 // 大量有规律的计算可以用循环
 ```
 
-**while循环**
+### while 循环
 
 ```python
 x = 1
@@ -198,9 +198,9 @@ while x <= 5:
 	x += 1
 ```
 
- while 只在每次循环的开始， 查看条件是否 true， 而不是在循环中
+while 只在每次循环的开始， 查看条件是否 true， 而不是在循环中
 
-**for循环**
+### for 循环
 
 - for in
 
@@ -216,7 +216,7 @@ for x in range(5)
 	print(x)
 ```
 
-**continue 和 break**
+### continue 和 break
 
 中途改变循环的命令
 
@@ -238,7 +238,7 @@ while i < 10:
 	if i % 2 == 0:
     continue
 	print(i)
-  
+
 # print the first 5 prime numbers from 1 to 50
 count = 0
 for i in range(1,50):
@@ -253,11 +253,11 @@ for i in range(1,50):
             break
 ```
 
-#### 函数
+## 函数
 
-**定义函数**
+### 定义函数
 
-例1：摄氏温度转换为华氏温度
+例 1：摄氏温度转换为华氏温度
 
 ```python
 #定义函数
@@ -267,15 +267,15 @@ def CtoF(c):
 CtoF(27)
 ```
 
-例2：打招呼
+例 2：打招呼
 
 ```python
 def sayHi():
-  print("hello")  
+  print("hello")
 sayHi()
 ```
 
-例3：凯撒密码
+例 3：凯撒密码
 
 ```python
 def CaeCipher(x, y, z):
@@ -286,7 +286,7 @@ def CaeCipher(x, y, z):
 CaeCipher(a, b, c)
 ```
 
-例4：求平方数
+例 4：求平方数
 
 ```python
 def power(x, n):
@@ -325,7 +325,7 @@ print(sum)
 
 函数的本质是模块化
 
-**变量的作用域**
+### 变量的作用域
 
 函数内部变量和函数外部变量的区别 => 作用域
 
@@ -335,7 +335,7 @@ print(sum)
 
 全局变量：函数外部定义的变量 => 任何函数都可以访问全局变量
 
-**匿名函数 lambda**
+### 匿名函数 lambda
 
 匿名函数的定义及运行方法
 
@@ -356,11 +356,11 @@ hello = lambda: print('你好')
 
 好处: 简化代码（多行代码用一行代码表达）
 
-lambda只能有一行表达式
+lambda 只能有一行表达式
 
-#### 文本操作
+## 文本操作
 
-**I/O**
+### I/O
 
 计算机数据的输入、输出（计算机角度）
 
@@ -370,7 +370,7 @@ input：程序外部的数据迁移到程序内部；output：将程序外部的
 
 文件处理的三个步骤：打开文件 - 处理文件 - 关闭文件
 
-**文本文件操作**
+### 文本文件操作
 
 读写文件：请求操作系统打开一个文件对象（称为文件描述符）=> 通过操作系统提供的接口 => 从文件对象中读写文件
 
@@ -378,13 +378,13 @@ input：程序外部的数据迁移到程序内部；output：将程序外部的
 
 `file object = open(file, mode, [encoding])` => 打开文件并保存到一个文件对象
 
-| 参数 | 处理模式 | 说明                                                         |
-| ---- | -------- | ------------------------------------------------------------ |
-| r    | 读出     | 如果file不存在，出错                                         |
-| w    | 写入     | 如果file不存在，创建新文件<br />如果file存在，则现有内容被清空 |
-| a    | 追加     | 如果file存在，新内容被加到现有内容之后<br />如果file不存在，创建新文件 |
+| 参数 | 处理模式 | 说明                                                                       |
+| ---- | -------- | -------------------------------------------------------------------------- |
+| r    | 读出     | 如果 file 不存在，出错                                                     |
+| w    | 写入     | 如果 file 不存在，创建新文件<br />如果 file 存在，则现有内容被清空         |
+| a    | 追加     | 如果 file 存在，新内容被加到现有内容之后<br />如果 file 不存在，创建新文件 |
 
-读取非英语文件时需要传入encoding参数以防止显示乱码
+读取非英语文件时需要传入 encoding 参数以防止显示乱码
 
 read()：一次性读入整个文件，返回字符串
 
@@ -418,7 +418,7 @@ for text in contents :
 file1.close()
 ```
 
-write(str)：将str字符串输出到文件中
+write(str)：将 str 字符串输出到文件中
 
 ```py
 infile = open('静夜思.txt', 'r', encoding='utf-8')
@@ -433,7 +433,7 @@ infile.close()
 outfile.close()
 ```
 
-with语句：自动调用close（防止忘记关闭文件）
+with 语句：自动调用 close（防止忘记关闭文件）
 
 ```py
 with open('静夜思.txt', 'r', encoding='utf-8') as infile:
@@ -441,9 +441,9 @@ with open('静夜思.txt', 'r', encoding='utf-8') as infile:
         print(line)
 ```
 
-**处理csv文件**
+### 处理 csv 文件
 
-什么是csv文件
+什么是 csv 文件
 
 - 逗号分隔值
 - 纯文本
@@ -464,11 +464,11 @@ with open('douban_top20utf8.csv', encoding='utf-8') as inCVSfile:  # 打开文�
         print()
 ```
 
-csv标准库函数
+csv 标准库函数
 
-csv.reader() ：读取一整行，返回一个csv对象
+csv.reader() ：读取一整行，返回一个 csv 对象
 
-csv.writer() ：写入一整行，返回一个csv对象
+csv.writer() ：写入一整行，返回一个 csv 对象
 
 writerow()
 
@@ -482,4 +482,3 @@ with open('sample.csv', 'w') as output:
         write.writerow((lambda x, y, z: x + y + z)('第', str(count), '行'))
         count += 1
 ```
-
