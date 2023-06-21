@@ -190,7 +190,9 @@ formlatext 函数: 输出单元格的公式
 
 ## 查找和引用函数(第四章)
 
-### 使用 VLOOKUP 和 HLOOKUP 查找信息
+### 查找信息
+
+VLOOKUP 和 HLOOKUP 函数
 
 功能完全相同
 
@@ -277,29 +279,45 @@ AVERAGEIFS：对满足多个条件的单元格求平均值
 
 ### 无需排序计算排名
 
-### 使用 LARGE 和 SMALL 函数计算最大值/最小值
+### 计算最大值/最小值
 
-### 使用 COUNTBLANK 函数计算空白单元格
+LARGE 和 SMALL 函数
+
+### 计算空白单元格
+
+COUNTBLANK 函数
 
 ### COUNT，COUNTA 和状态栏
 
 ### 数学函数
 
-## 使用 ROUND，ROUNDUP 和 ROUNDDOWN 函数
+ROUND，ROUNDUP 和 ROUNDDOWN 函数
 
-### 使用 MROUND、CEILING 和 FLOOR 函数
+MROUND、CEILING 和 FLOOR 函数
 
-### 使用 INT 和 TRUNC 函数进行取整
+### 取整
 
-### 使用 MOD 计算余数和应用条件格式
+INT 函数
+
+TRUNC 函数
+
+### 计算余数和应用条件格式
+
+MOD 函数
 
 ### 随机数函数的实际应用
 
 ### 度量衡换算函数
 
-### 使用 AGGREGATE 函数忽略错误和隐藏据
+### 忽略错误和隐藏据
 
-### 使用 ROMAN 和 ARABIC 函数显示数字
+使用 AGGREGATE 函数
+
+### 显示数字
+
+ROMAN 函数
+
+ARABIC 函数
 
 ## 日期和时间函数
 
@@ -315,7 +333,7 @@ AVERAGEIFS：对满足多个条件的单元格求平均值
 
 输入 6 a -> 6:00 AM
 
-### 使用时间和日期函数
+### 时间和日期函数
 
 #### 合并日期
 
@@ -341,7 +359,7 @@ minute 函数：获取时间中的分钟
 
 second 函数：获取时间中的秒
 
-### 使用 TODAY 和 NOW 函数动态创建日期和时间项
+### 动态创建日期和时间项
 
 对时间进行动态处理
 
@@ -359,21 +377,48 @@ dateif 函数：计算两个日期之间的年数
 
 应用 2. 使用 dateif 函数函数计算年龄
 
-### 使用 WEEKDAY 函数标识一周中的第几天
+### 标识一周中的第几天
 
-### 使用 NETWORKDAYS 函数计算工作天数
+WEEKDAY 函数
 
-### 使用 WORKDAY 函数确定结束日期
+### 计算工作天数
 
-### 使用 DATEDIF 函数计算日期间隔
+NETWORKDAYS 函数
 
-### 使用 EDATE 和 EOMONTH 函数计算与月份相关的日期
+### 确定结束日期
+
+WORKDAY 函数
+
+### 计算日期间隔
+
+DATEDIF 函数
+
+### 计算与月份相关的日期
+
+EDATE 函数
+
+EOMONTH 函数
 
 ## 数组公式和函数
 
+### 使用数组公式扩展公式功能
+
+### 使用数组扩展公式计算唯一项功能
+
+frequency 函数 计算频率分布
+
+transpose 函数 行列转换
+
+trend 和 growth 函数 回归分析
+
+使用数组公式和 MATCH 函数实现复杂的查找功能 <br>
+扩展函数的能力， 让查询功能变得更加强大。
+
 ## 引用函数
 
-### OFFSET 函数
+### 获取其他单元格数据
+
+OFFSET 函数
 
 引用：基于其他单元格的数据进行操作
 
@@ -395,10 +440,74 @@ offset 函数应用：计算最新日期、最新销量、最近 3 天平均销�
 
 2. 将 offset 函数的计算结果作为参数传入 average 函数，得出最后的平均数
 
-### INDIRECT 函数
+### 返回引用
 
-INDIRECT 函数用于返回引用
+INDIRECT 函数
+
+使用 INDIRECT 函数和数据验证实现两级列表选取功能
 
 ## 文本函数
 
+### 查找和提取信息
+
+find 函数
+
+search 函数
+
+mid 函数
+
+### 提取数据
+
+left 函数
+
+right 函数
+
+### 清除多余空格
+
+trim 函数
+
+substitute 函数
+
+### 连接不同单元格
+
+`&` 操作符
+
+concatenate 函数
+
+### 连接不同单元格的数据
+
+concat 函数
+
+textjoin 函数
+
+### 调整字母大小写
+
+upper 函数
+
+lower 函数
+
+proper 函数
+
+### 修改字符串内容
+
+replace 函数
+
+substitute 函数
+
+### 其他文本工具
+
+text 函数
+
+rept 函数
+
+len 函数
+
 ## 信息类函数
+
+cell 和 info 函数
+
+is 函数
+
+错误检查函数
+
+isformula 函数
